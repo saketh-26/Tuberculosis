@@ -139,7 +139,7 @@ if __name__=='__main__':
     auth_status = st.session_state.get('auth_status', None)
     if auth_status == "logged_in":
         st.success(f"Welcome {st.session_state.username}!")
-        st.header('Upload an image and the model will detect brain tumors.')
+        st.header('Upload an image and the model will detect tuberculosis')
         model()
         
     elif auth_status == "login_failed":
