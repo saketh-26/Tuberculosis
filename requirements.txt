@@ -1,4 +1,5 @@
 streamlit
 opencv-python-headless
-tensorflow
+tensorflow==2.13.1
+keras==2.13.1
 bcrypt
