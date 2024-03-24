@@ -129,9 +129,10 @@ def model():
 
         # Display the prediction result
         if prediction * 100 >= 1:
-            st.write("Tuberculosis Detected")
+            st.markdown("<h2 style='color:red;'>Tuberculosis Detected</h2>", unsafe_allow_html=True)
         else:
-            st.write("Tuberculosis Not Detected")
+            st.markdown("<h2 style='color:green;'>Tuberculosis Not Detected</h2>", unsafe_allow_html=True)
+
 if __name__=='__main__':
     st.title('Tuberculosis Detection using Deep Learning')
 
